@@ -10,7 +10,7 @@ class Manufacture extends Db
         return $item;
     }
 
-    public function getCateNameByID($manu_id)
+    public function getManuNameByID($manu_id)
     {
         $sql = self::$connection->prepare("SELECT * FROM `manufactures` WHERE `manu_id`=?");
         $sql->bind_param("i", $manu_id);
